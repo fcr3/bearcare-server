@@ -4,7 +4,9 @@ const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./config/keys');
 
-mongoose.connect(keys.MONGOD_URI, {useNewUrlParser: true});
+require('./models/providerMapData');
+
+mongoose.connect(keys.MONGODB_URI, {useNewUrlParser: true});
 const app = express();
 /*
 
@@ -31,7 +33,7 @@ require('./routes/authRoutes')(app);
 */
 
 app.listen(PORT, () => {
-  if (process.env.NODE_ENV === 'development') {
-      console.log("listening on port 5000");
+  if (process.env.NODE_ENV !== 'production') {
+      console.log("listening on port 3000");
   }
 })
