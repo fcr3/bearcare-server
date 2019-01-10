@@ -11,7 +11,7 @@
     "node": "8.10.0",
     "npm": "6.5.0"
   },
-  "author": "",
+  "author": "BearCare Students",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",

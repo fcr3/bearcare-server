@@ -1,5 +1,12 @@
 # BearCare Backend
 
+### URL and Routes:
+
+- URL: https://agile-ocean-69681.herokuapp.com/
+- Routes Supported:
+  - {URL}/api -> sends a welcome message :)
+  - {URL}/api/providerMapData -> sends five items of our dataset
+
 ### Summary:
 Server dedicated to the upcoming BearCare application for UC Berkeley Students. This project is mainly in prototyping stage. Our goal is to make provider knowledge more accessible to the student body.
 
