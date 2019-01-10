@@ -17,8 +17,8 @@ Server dedicated to the upcoming BearCare application for UC Berkeley Students. 
 - mongodb: ^3.1.10
 - mongoose: ^5.4.2
 - passport: ^0.4.0
-- pm2 (upcoming)
-- redis (upcoming)
+- pm2 (coming soon)
+- redis (coming soon)
 
 ### Features:
 
@@ -28,4 +28,6 @@ Server dedicated to the upcoming BearCare application for UC Berkeley Students. 
 ### Questions:
 
 Email Matt, Kyle, or Me! <br/>
-(Our email will be posted soon!)
+- Matt: (coming soon)
+- Kyle Tucker: kyletucker@berkeley.edu
+- Christian Reyes: fcreyes@berkeley.edu
