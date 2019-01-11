@@ -8,6 +8,8 @@
   - {URL}/api/providerMapData/sample -> sends five items of our dataset
   - {URL}/api/providerMapData/<b style="color: #3A9FE5">:f_name</b>&<b style="color: #3A9FE5">:l_name</b>&<b style="color: #3A9FE5">:addr</b>&<b style="color: #3A9FE5">:spec</b>&<b style="color: #3A9FE5">:ins</b> -> use fields for querying
 
+### Critical Dependencies:
+
 - cookie-session: ^2.0.0-beta.3
 - express: ^4.16.4
 - mongodb: ^3.1.10
