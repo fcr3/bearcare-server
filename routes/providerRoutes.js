@@ -25,18 +25,19 @@ module.exports = (app) => {
 
   // Query Routing Based On:
 
-  const query = '/api/providerMapData/:f_name&:l_name&:addr&:specialty&:ins';
+  const query = '/api/providerMapData/:f_name&:l_name&:addr&:spec&:ins';
   function checkParams(params) {
     var queryObj = {
       provider_first_name: params.f_name,
       provider_last_name: params.l_name,
       addr: params.addr,
-      specialty: params.specialty,
+      specialty: params.spec,
       insurances: params.ins
     }
 
-    var retObj = _.omitBy(queryObj, (val, key) => key === '');
-    return _.mapValues(retObj, (val) => {return {$in: [val]};});
+    var retObj = _.pickBy(queryObj, (val) => val !== '\'\'');
+    retObj = _.mapValues(retObj, (val) => {return {$in: [val]};});
+    return retObj;
   }
 
   app.get(query, (req, res) => {

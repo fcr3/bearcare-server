@@ -6,11 +6,7 @@
 - Routes Supported:
   - {URL}/api -> sends a welcome message :)
   - {URL}/api/providerMapData/sample -> sends five items of our dataset
-
-### Summary:
-Server dedicated to the upcoming BearCare application for UC Berkeley Students. This project is mainly in prototyping stage. Our goal is to make provider knowledge more accessible to the student body.
-
-### Technology Used:
+  - {URL}/api/providerMapData/:f_name&:l_name&:addr&:spec&:ins -> use fields for querying
 
 - cookie-session: ^2.0.0-beta.3
 - express: ^4.16.4
