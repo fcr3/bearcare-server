@@ -2,12 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
+const bodyParser = require('body-parser');
 const keys = require('./config/keys');
 
 require('./models/providerMapData');
 
 mongoose.connect(keys.MONGODB_URI, {useNewUrlParser: true});
 const app = express();
+app.use(bodyParser.json());
 /*
 
 For Authentication use later:
