@@ -41,7 +41,7 @@ module.exports = (app) => {
   }
 
   app.get(query, (req, res) => {
-    Providers.findOne(checkParams(req.params)).then((providers) => {
+    Providers.find(checkParams(req.params)).then((providers) => {
       if (!providers) {return res.status(404).send();}
       res.send({providers});
     }).catch((e) => {
