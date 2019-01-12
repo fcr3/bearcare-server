@@ -27,9 +27,9 @@ app.use(passport.session());
 */
 
 const PORT = process.env.PORT || 3000;
-//require('./routes/providerRoutes')(app); DEPRECATED
+// require('./routes/providerRoutes')(app); DEPRECATED
 require('./routes/providerRoutes2')(app);
-require('./routes/rcRoutes')(app);
+// require('./routes/rcRoutes')(app);
 
 /*
 
