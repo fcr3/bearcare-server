@@ -6,10 +6,12 @@ const bodyParser = require('body-parser');
 const keys = require('./config/keys');
 
 require('./models/providerMapData');
+require('./models/refCollection');
 
 mongoose.connect(keys.MONGODB_URI, {useNewUrlParser: true});
 const app = express();
 app.use(bodyParser.json());
+
 /*
 
 For Authentication use later:
@@ -25,7 +27,9 @@ app.use(passport.session());
 */
 
 const PORT = process.env.PORT || 3000;
-require('./routes/providerRoutes')(app);
+//require('./routes/providerRoutes')(app); DEPRECATED
+require('./routes/providerRoutes2')(app);
+require('./routes/rcRoutes')(app);
 
 /*
 

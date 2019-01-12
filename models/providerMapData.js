@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const _ = require('lodash');
 const {Schema} = mongoose;
 
 const providerMapDataSchema = new Schema({
@@ -27,4 +28,13 @@ const providerMapDataSchema = new Schema({
   }
 });
 
-mongoose.model('providers', providerMapDataSchema, 'providerMapData');
+providerMapDataSchema.methods.toJSON = function() {
+  var provider = this;
+  var providerObject = provider.toObject();
+  return _.pick(providerObject, ['_id', 'provider_last_name',
+        'provider_first_name', 'specialty', 'insurances',
+        'addr', 'phone']);
+}
+
+// mongoose.model('providers', providerMapDataSchema, 'providerMapData');
+mongoose.model('providers', providerMapDataSchema, 'provideMapData2');

@@ -1,12 +1,18 @@
 # BearCare Backend
 
+### Updates:
+
+- 1/11/19: providerRoutes2 is more reliable to use/made switch occur
+- 1/10/19: deployed API, providerRoutes is first set of routes made
+- 1/9/19: project started
+
 ### URL and Routes:
 
 - URL: https://agile-ocean-69681.herokuapp.com/
 - Routes Supported:
   - {URL}/api -> sends a welcome message :)
-  - {URL}/api/providerMapData/sample -> sends five items of our dataset
-  - {URL}/api/providerMapData/<b style="color: #3A9FE5">:f_name</b>&<b style="color: #3A9FE5">:l_name</b>&<b style="color: #3A9FE5">:addr</b>&<b style="color: #3A9FE5">:spec</b>&<b style="color: #3A9FE5">:ins</b> -> use fields for querying
+  - {URL}/api/providerMapData2/sample -> sends five items of our dataset
+  - {URL}/api/providerMapData2/<b>f_name=:f_name</b>&<b>l_name=:l_name</b>&<b>addr=:addr</b>&<b>spec=:spec</b>&<b>ins=:ins</b> -> use fields for querying
 
 ### Critical Dependencies:
 
