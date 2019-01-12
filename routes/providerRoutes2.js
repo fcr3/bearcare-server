@@ -28,7 +28,7 @@ module.exports = (app) => {
     if (string === '\'\'') {return string;}
     var retArr = string.split(',');
     retArr = retArr.map((val) => {
-      if (val.toUpperCase() === 'SHIP') {return val;}
+      if (val.toUpperCase() === 'SHIP') {return val.toUpperCase();}
       var interArr = val.split(" ");
       interArr = interArr.map((inVal) => {
         return inVal.charAt(0).toUpperCase() + inVal.slice(1).toLowerCase();
