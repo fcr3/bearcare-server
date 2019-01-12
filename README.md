@@ -11,8 +11,8 @@
 - URL: https://agile-ocean-69681.herokuapp.com/
 - Routes Supported:
   - {URL}/api -> sends a welcome message :)
-  - {URL}/api/providerMapData2/sample -> sends five items of our dataset
-  - {URL}/api/providerMapData2/<b>f_name=:f_name</b>&<b>l_name=:l_name</b>&<b>addr=:addr</b>&<b>spec=:spec</b>&<b>ins=:ins</b> -> use fields for querying
+  - {URL}/api/pmd2/sample -> sends five items of our dataset
+  - {URL}/api/pmd2/<b>f_name=:f_name</b>&<b>l_name=:l_name</b>&<b>addr=:addr</b>&<b>spec=:spec</b>&<b>ins=:ins</b> -> use fields for querying
 
 ### Critical Dependencies:
 
@@ -21,6 +21,7 @@
 - mongodb: ^3.1.10
 - mongoose: ^5.4.2
 - passport: ^0.4.0
+- lodash: ^4.17.11
 - pm2 (coming soon)
 - redis (coming soon)
 

@@ -37,4 +37,4 @@ providerMapDataSchema.methods.toJSON = function() {
 }
 
 // mongoose.model('providers', providerMapDataSchema, 'providerMapData');
-mongoose.model('providers', providerMapDataSchema, 'provideMapData2');
+mongoose.model('providers', providerMapDataSchema, 'providerMapData2');
