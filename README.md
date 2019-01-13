@@ -13,6 +13,13 @@
 - Gain access to university database for TANG events
 - Improve dataset and implement providerRoutes3
 
+### Instructions for local testing:
+
+- Basic Setup:
+  - Must make your own dev.js file within the config directory and follow prod.js for what keys you must fill in
+  - Go to mLab.com for a Mongo database that you can set up. This requires you making a user with a username and password to fill in the URI
+  - `npm install` for all the packages
+
 ### URL and Routes:
 
 - URL: https://agile-ocean-69681.herokuapp.com/
