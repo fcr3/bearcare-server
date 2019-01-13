@@ -40,6 +40,6 @@
 ### Questions:
 
 Email Matt, Kyle, or Me! <br/>
-- Matt: matthewtang@berkeley.edu
+- Matthew Tang: matthewtang@berkeley.edu
 - Kyle Tucker: kyletucker@berkeley.edu
 - Christian Reyes: fcreyes@berkeley.edu
