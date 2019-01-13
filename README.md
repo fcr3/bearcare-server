@@ -13,12 +13,22 @@
 - Gain access to university database for TANG events
 - Improve dataset and implement providerRoutes3
 
-### Instructions for local testing:
+### Instructions for Local Testing/Deploying:
 
 - Basic Setup:
   - Must make your own dev.js file within the config directory and follow prod.js for what keys you must fill in
   - Go to mLab.com for a Mongo database that you can set up. This requires you making a user with a username and password to fill in the URI
   - `npm install` for all the packages
+
+- Deployment:
+  - Set up environment variables, mimicking the style within prod.js
+  - Use the keywords after process.env within prod.js to set the names and then enter the values you want
+
+- User Setup:
+  - This requires the use of a google developer account.
+  - Setup a new project with whatever name you would like to call it. The location doesn't really matter, either (I hope!).
+  - Use the Google+ API and set up credentials, including authorized URLs if need be (this is for deployment when ready; the relevant URLs should be given by your deployment service)
+  - Set up a OAuth Client ID, including authorized URLs and callback paths (this is needed for both local testing and deployment)
 
 ### URL and Routes:
 
