@@ -19,6 +19,7 @@
   - Must make your own dev.js file within the config directory and follow prod.js for what keys you must fill in
   - Go to mLab.com for a Mongo database that you can set up. This requires you making a user with a username and password to fill in the URI
   - `npm install` for all the packages
+  - If you want access to our actual database, then please email one of us and we will work out something to get you an account. It shouldn't be too much of a problem :)
 
 - Deployment:
   - Set up environment variables, mimicking the style within prod.js
