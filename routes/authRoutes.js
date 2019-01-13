@@ -9,9 +9,14 @@ module.exports = (app) => {
   );
 
   // handles callback address and asks passport to handle approval
-  app.get('/auth/google/callback', passport.authenticate('google'));
+  app.get('/auth/google/callback', passport.authenticate('google'),
+    (req, res) => {
+      res.send({
+        message: "logged in"
+      });
+  });
 
-  app.get('/api/logout', (req, res) => {
+  app.get('/user/logout', (req, res) => {
     req.logout();
     res.send({
       message: 'logged out',
@@ -19,7 +24,7 @@ module.exports = (app) => {
     });
   });
 
-  app.get('/api/current_user', (req, res) => {
+  app.get('/user/current', (req, res) => {
     res.send({
       message: 'current user',
       user: req.user || null
