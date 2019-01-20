@@ -2,6 +2,7 @@
 
 ### Updates:
 
+- 1/20/19: added appUserRoutes and appDeviceRoutes with authentication
 - 1/11/19: providerRoutes2 is more reliable to use/made switch occur
 - 1/10/19: deployed API, providerRoutes is first set of routes made
 - 1/9/19: project started
@@ -49,7 +50,10 @@
 - mongodb: ^3.1.10
 - mongoose: ^5.4.2
 - passport: ^0.4.0
+- passport-google-oauth20: ^1.0.0
 - lodash: ^4.17.11
+- google-auth-library: ^3.0.1
+- bcrypt: ^2.4.3
 - pm2 (coming soon)
 - redis (coming soon)
 
@@ -62,7 +66,10 @@
 
 - Sign-In: https://developers.google.com/identity/sign-in/ios/sign-in?ver=swift
 - Auth: https://developers.google.com/identity/sign-in/ios/backend-auth
-- Push Notification: https://www.npmjs.com/package/node-pushnotifications
+- Push Notification:
+  - node-pushnotifications: https://www.npmjs.com/package/node-pushnotifications
+  - node-apn: https://github.com/node-apn/node-apn/blob/master/doc/provider.markdown
+  - APN Provider API: https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingwithAPNs.html
 
 ### Questions:
 
