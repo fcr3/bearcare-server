@@ -8,15 +8,14 @@ const keys = require('./config/keys');
 require('./models/providerMapData');
 require('./models/refCollection');
 require('./models/users');
-require('./services/passport');
+require('./models/devices');
+// require('./services/passport');
 
 mongoose.connect(keys.MONGODB_URI, {useNewUrlParser: true});
 const app = express();
 app.use(bodyParser.json());
 
-/*
-For Authentication use:
-*/
+// For Authentication use, if online application is needed:
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000,
@@ -27,7 +26,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 require('./routes/mainRoutes')(app);
-require('./routes/authRoutes')(app);
+require('./routes/appDeviceRoutes')(app);
+require('./routes/appUserRoutes')(app);
+require('./routes/webAuthUserRoutes')(app);
 // require('./routes/providerRoutes')(app); DEPRECATED
 require('./routes/providerRoutes2')(app);
 // require('./routes/rcRoutes')(app);

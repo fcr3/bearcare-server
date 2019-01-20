@@ -11,7 +11,10 @@
 - Push Notification capability
 - Connect mobile app authentication with database
 - Gain access to university database for TANG events
+- Set up listeners for RSS Feed
+- Set up monitors for device usage
 - Improve dataset and implement providerRoutes3
+- Finish appUserRoutes and appDeviceRoutes
 
 ### Instructions for Local Testing/Deploying:
 
@@ -54,6 +57,12 @@
 
 - API supports get requests for provider data
 - API supports authenticated post requests for user data (upcoming)
+
+### Resources:
+
+- Sign-In: https://developers.google.com/identity/sign-in/ios/sign-in?ver=swift
+- Auth: https://developers.google.com/identity/sign-in/ios/backend-auth
+- Push Notification: https://www.npmjs.com/package/node-pushnotifications
 
 ### Questions:
 
